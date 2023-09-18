@@ -13,13 +13,14 @@ main {
 }
 
 .calculator {
-	background-color: #4b4c4e;
+	background-color: #22252D;
+	width: 100%;
 	max-width: 375px;
-	height: 620px;
+	height: 600px;
 	display: flex;
 	flex-direction: column;
+	border-radius: 0.6rem;
 	overflow: hidden;
-    flex: 1 1 0%;
 }
 
 .display {
@@ -30,6 +31,10 @@ main {
 	align-items: flex-end;
 	color: white;
 	text-align: right;
+	flex: 1 1 0%;
+    margin: 1rem;
+    border-radius: 1rem;
+    background-color: rgb(61, 71, 78);
 }
 
 .display .content {
@@ -43,30 +48,28 @@ main {
 
 .display .input {
 	width: 100%;
-	font-size: 1.25rem;
-	margin-bottom: 0.5rem;
+	font-size: 1.2rem;
 }
 
 .display .output {
-	font-size: 3rem;
+	font-size: 1.8rem;
 	font-weight: 700;
 	width: 100%;
 	white-space: nowrap;
 }
 
 .display .operator {
-	color: #EB6666;
+	color: #f03838;
 }
 
 .display .brackets,
 .display .percent {
-	color: #26FED7;
+	color: #38fe26;
 }
 
 .keys {
-	background-color: #4a4e58;
+	background-color: #292D36;
 	padding: 1.5rem;
-
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: repeat(5, 1fr);
@@ -81,7 +84,7 @@ main {
 	display: block;
 	height: 0;
 	padding-top: 100%;
-	background-color: #2d2f36;
+	background-color: #262933;
 	border-radius: 1rem;
 	transition: 0.2s;
 	user-select: none;
@@ -103,9 +106,9 @@ main {
 }
 
 .keys .key.operator span {
-	color: #ec0e63;
+	color: #f03838;
 }
 
 .keys .key.action span {
-	color: #04fc4e;
+	color: #38fe26;
 }
